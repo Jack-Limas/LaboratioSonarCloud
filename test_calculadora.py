@@ -1,10 +1,10 @@
 import os
 import sys
 
-# Agregar la ruta actual al path del sistema
+# Asegurar que Python busque en el directorio actual
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
-# Intentar importar según el nombre de archivo existente
+# Intenta importar con mayúscula y, si no lo encuentra, en minúscula
 try:
     from Calculadora import calcular_total
 except ModuleNotFoundError:
